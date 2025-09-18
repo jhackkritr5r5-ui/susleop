@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+        header {
+            background: #d62b2b;
+            color: #ffffff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            margin: 0;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #2d2ad4;
+        }
+        main {
+            padding: 2rem;
+            text-align: center;
+        }
+        footer {
+            background: #b1acb3;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        /* เพิ่ม margin ระหว่างปุ่ม search และ login */
+        form.d-flex button {
+            margin-left: 10px; /* ระยะห่างระหว่างปุ่ม search และ login */
+        }
+    </style>
+</head>
+<body style="background-color: #ffedbd;">
+    <script src="js/bootstrap.min.js"></script>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid" style="background-color: pink;">
+            <a class="navbar-brand" href="#"><h3>Welcome Japan</h3></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link disabled" aria-current="page" href="#"><b>Homepage</b></a>
+                    <a class="nav-link" href="restaurant.html"><b>Restaurant</b></a>
+                    <a class="nav-link" href="travel.html"><b>Travel</b></a>
+                    <a class="nav-link" href="Creator.html"><b>Creator</b></a>
+                </div>
+            </div>
+            <!-- Login Button -->
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+                <button class="btn btn-outline-primary ms-3" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button> <!-- Added "ms-3" for margin -->
+            </form>
+            
+        </div>
+    </nav>
+
+    <!-- Modal for Login -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="username" placeholder="Enter username">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter password">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <h3 align="center" style="color: red;"><b>จุดประสงค์ของการทำเว็บ</b></h3>
+        <h5 align="center">สวัสดีครับเพื่อนๆ จุดประสงค์ในการทำเว็บของพวกเรานั้นคือ อยากให้นักท่องเที่ยวหรือคนที่กำลังไปเที่ยวญี่ปุ่นได้รู้จัก สถานที่ท่องเที่ยวและร้านอาหารเพิ่มเติม เพื่อเป็นแนวทางในการไปญี่ปุ่นครับ</h5>
+        <h2 style="text-align: center;"><b style="color: red;">Japan Map</b></h2>
+        <div class="row">
+            <div class="col-12">
+                <img src="d:/r5r5/img/l5.jpg" width="48%" class="d-inline-block">
+                <img src="d:/r5r5/img/l3.jpg" width="48%" class="d-inline-block">
+            </div>
+            <div class="col-12">
+                <img src="d:/r5r5/img/l4.jpg" width="48%" class="d-inline-block">
+                <img src="d:/r5r5/img/l2.jpg" width="48%" class="d-inline-block">
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

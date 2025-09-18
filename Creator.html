@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website - Welcome Japan</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffedbd;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #d62b2b;
+            color: #ffffff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        footer {
+            background: #b1acb3;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg" style="background-color: pink;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><h3>Welcome Japan</h3></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="homepage.html"><b>Homepage</b></a>
+                    <a class="nav-link" href="restaurant.html"><b>Restaurant</b></a>
+                    <a class="nav-link" href="travel.html"><b>Travel</b></a>
+                    <a class="nav-link disabled" href="#"><b>Creator</b></a>
+                </div>
+            </div>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+                <button class="btn btn-outline-primary ms-2" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="username" placeholder="Enter username">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter password">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Marquee -->
+    <div class="text-center my-4">
+        <marquee direction="right" style="color: red;">3 แสบแถบญี่ปุ่น</marquee>
+    </div>
+
+    <!-- Table -->
+    <div class="container mb-5">
+        <table class="table table-dark table-striped table-bordered text-center">
+            <thead>
+                <tr>
+                    <th>ลำดับ</th>
+                    <th>รูป</th>
+                    <th>ชื่อ-นามสกุล</th>
+                    <th>เบอร์โทร</th>
+                    <th>Facebook</th>
+                    <th>Instagram</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><img src="img/a1.jpg" width="150" height="200" alt="Anucha"></td>
+                    <td>นาย อนุชา เกิดแย้ม</td>
+                    <td>095-231-9424</td>
+                    <td><a href="https://www.facebook.com/share/19PH4f5swj/?mibextid=wwXIfr" target="_blank">Anucha KerdYaem</a></td>
+                    <td><a href="https://www.instagram.com/_anxchqz?igsh=a2N2YXVqemhzZ21n&utm_source=qr" target="_blank">@_anxchqz</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><img src="img/a3.jpg" width="175" height="185" alt="Jhackkrit"></td>
+                    <td>นาย จักกริศน์ เสาไชย</td>
+                    <td>096-859-6625</td>
+                    <td><a href="https://www.facebook.com/share/1BEHdup2y7/?mibextid=wwXIfr" target="_blank">Jhackkrit Saowchai</a></td>
+                    <td><a href="https://www.instagram.com/jhackkr_it?igsh=MWR6dnMxY3ppZ3A0eg==" target="_blank">@jhackkr_it</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><img src="img/a2.jpg" width="175" height="250" alt="Phiphat"></td>
+                    <td>นาย พิพัตน์ บานเย็น</td>
+                    <td>094-482-0222</td>
+                    <td><a href="https://www.facebook.com/share/18nes9Yu5D/?mibextid=wwXIfr" target="_blank">Phiphat Banyen</a></td>
+                    <td><a href="https://www.instagram.com/phipha_ttttt?igsh=MWs2OWUwOG83aTI5ag==" target="_blank">@phipha_ttttt</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
